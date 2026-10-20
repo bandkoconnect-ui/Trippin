@@ -1,0 +1,33 @@
+/** Simple line icons (24×24, currentColor). */
+const s = (body) => `<svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">${body}</svg>`;
+
+export const ICONS = {
+  dates: s('<rect x="3.5" y="5" width="17" height="15" rx="1.5"/><path d="M3.5 9.5h17M8 3v4M16 3v4"/><path d="M7.5 13.5h3v3h-3z" fill="currentColor" stroke="none"/>'),
+  origin: s('<path d="M12 21s-6.5-6.2-6.5-11a6.5 6.5 0 0 1 13 0c0 4.8-6.5 11-6.5 11z"/><circle cx="12" cy="10" r="2.3"/>'),
+  budget: s('<ellipse cx="12" cy="6.5" rx="7" ry="2.8"/><path d="M5 6.5v5c0 1.5 3.1 2.8 7 2.8s7-1.3 7-2.8v-5"/><path d="M5 11.5v5c0 1.5 3.1 2.8 7 2.8s7-1.3 7-2.8v-5"/>'),
+  transport: s('<path d="M4 17c3-6 6-10 16-11"/><circle cx="4" cy="17" r="1.6"/><path d="M15.5 4.5 20 6l-1.5 4.5"/><path d="M8 20h8"/>'),
+  culture: s('<circle cx="9" cy="12" r="5.5"/><circle cx="15" cy="12" r="5.5"/>'),
+  comfort: s('<path d="M5 11V8a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v3"/><path d="M3.5 11.5a1.5 1.5 0 0 1 3 0V14h11v-2.5a1.5 1.5 0 0 1 3 0V17H3.5z"/><path d="M6 17v2.5M18 17v2.5"/>'),
+  distance: s('<circle cx="12" cy="12" r="8.5" stroke-dasharray="2 2.5"/><circle cx="12" cy="12" r="4.5"/><circle cx="12" cy="12" r="1.3" fill="currentColor"/>'),
+  plane: s('<path d="M10.5 13.5 3 11l1.5-1.5 7.5.5 4.5-5c1-1 2.5-1 3 .5.5 1.5-.5 2.5-1.5 3l-5 4.5.5 7.5L11 22l-2.5-7.5z"/>'),
+  train: s('<rect x="6" y="3.5" width="12" height="13" rx="3"/><path d="M6 10.5h12M9 20l-2 1.5M15 20l2 1.5M9 16.5 7.5 20h9L15 16.5"/><circle cx="9" cy="13.5" r=".8" fill="currentColor"/><circle cx="15" cy="13.5" r=".8" fill="currentColor"/>'),
+  car: s('<path d="M4 15.5v-3l2-5h12l2 5v3"/><rect x="3" y="12.5" width="18" height="5" rx="1.5"/><circle cx="7.5" cy="17.5" r="1.6"/><circle cx="16.5" cy="17.5" r="1.6"/>'),
+  bus: s('<rect x="5" y="3.5" width="14" height="15" rx="2.5"/><path d="M5 11h14M8 18.5V21M16 18.5V21M9 7h6"/><circle cx="8.5" cy="14.5" r=".8" fill="currentColor"/><circle cx="15.5" cy="14.5" r=".8" fill="currentColor"/>'),
+  ferry: s('<path d="M3 18c1.5 1 3 1 4.5 0s3-1 4.5 0 3 1 4.5 0 3-1 4.5 0"/><path d="M5 15.5 4 11h16l-1 4.5"/><path d="M8 11V7.5h8V11M12 4v3.5"/>'),
+  close: s('<path d="M6 6l12 12M18 6 6 18"/>'),
+  star: s('<path d="m12 3.8 2.5 5.2 5.7.8-4.1 4 1 5.6L12 16.7l-5.1 2.7 1-5.6-4.1-4 5.7-.8z"/>'),
+  starFill: '<svg viewBox="0 0 24 24" width="24" height="24" fill="currentColor" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"><path d="m12 3.8 2.5 5.2 5.7.8-4.1 4 1 5.6L12 16.7l-5.1 2.7 1-5.6-4.1-4 5.7-.8z"/></svg>',
+  chevronDown: s('<path d="m6 9 6 6 6-6"/>'),
+  chevronUp: s('<path d="m6 15 6-6 6 6"/>'),
+  plus: s('<path d="M12 5v14M5 12h14"/>'),
+  minus: s('<path d="M5 12h14"/>'),
+  home: s('<path d="M4 11.5 12 5l8 6.5"/><path d="M6 10v9h12v-9"/>'),
+  list: s('<path d="M9 6.5h11M9 12h11M9 17.5h11"/><circle cx="4.5" cy="6.5" r="1" fill="currentColor"/><circle cx="4.5" cy="12" r="1" fill="currentColor"/><circle cx="4.5" cy="17.5" r="1" fill="currentColor"/>'),
+  locate: s('<circle cx="12" cy="12" r="6.5"/><circle cx="12" cy="12" r="2" fill="currentColor"/><path d="M12 2.5v3M12 18.5v3M2.5 12h3M18.5 12h3"/>'),
+  compare: s('<rect x="3.5" y="5" width="7" height="14" rx="1"/><rect x="13.5" y="5" width="7" height="14" rx="1"/>'),
+  check: s('<path d="m5 12.5 4.5 4.5L19 7.5"/>'),
+  arrow: s('<path d="M5 12h14M13 6l6 6-6 6"/>'),
+  back: s('<path d="M19 12H5M11 6l-6 6 6 6"/>'),
+  reset: s('<path d="M4.5 12a7.5 7.5 0 1 0 2.2-5.3"/><path d="M4.5 4.5v4h4"/>'),
+  external: s('<path d="M14 4.5h5.5V10M19.5 4.5 11 13M18 14v4.5a1 1 0 0 1-1 1H5.5a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1H10"/>'),
+};
